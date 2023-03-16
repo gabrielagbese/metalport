@@ -36,15 +36,15 @@ const Layout = ({ children }) => {
     var tray = document.getElementById("tray");
     var elem = document.getElementById(a);
     //tray.scrollLeft = elem.offsetLeft;
-    tl.to("#content-body", {y: "10%", duration:1})
+    tl.to("#content-body", {y: "10%", duration:0.5})
     setTimeout(() => {
         tray.scrollTo({
             body:0,
             left: elem.offsetLeft,
             behavior: 'smooth',
         })
-    }, 1000);
-    tl.to("#content-body", {y: "0%", duration:1, delay:1})
+    }, 500);
+    tl.to("#content-body", {y: "0%", duration:0.5, delay:0.5})
 }
 
     return (
