@@ -1,0 +1,131 @@
+@import "breakpoints";
+
+body{
+    margin: 0;
+    padding: 0%;
+    overflow: hidden;
+    background-color: black;
+    color: #DCDCCD;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.wrapper-grid{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.wrapper-content-layer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.wrapper-content{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.wrapper-content-top{
+    width: 100%;
+    min-height: 10%;
+    //border: thin solid green;
+}
+.wrapper-content-body{
+    width: 100%;
+    min-height: 90%;
+}
+.wrapper-nav{
+    //position: absolute;
+    width: 100%;
+    height: 15%;
+    //border: thin solid red;
+    border-top: thin solid rgba(255, 255, 255, 0.155);
+    z-index: 2;
+    margin-top: -15vh;
+    background-color: #dcdccd1e;
+    backdrop-filter: blur(15px);
+    
+}
+
+.location{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.light-layer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.ball1{
+    width: 400px;
+    height: 400px;
+    background-color: magenta;
+    border-radius: 50%;
+    filter: blur(200px);
+}
+.ball2{
+    width: 400px;
+    height: 400px;
+    background-color: rgba(0, 255, 255, 0.7);
+    margin-left: -12.5%;
+    border-radius: 50%;
+    filter: blur(200px);
+}
+
+.card-tray{
+    min-width: 100%;
+    height: 90%;
+    //border: thin solid salmon;
+    position: fixed;
+    overflow-y: auto;
+    display: flex;
+    white-space: nowrap;
+}
+.card-tray {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.card-tray::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.section-wrapper{
+    min-width: 100%;
+    height: 100%;
+}
+
+.section-component-wrapper{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.component-card{
+    background-color: rgb(15, 15, 15);
+    @include xs{
+        width: 90%;
+        height: 95%;
+        border: thin solid rgba(255, 255, 255, 0.250);
+        border-radius: 20px;
+    };
+    @include lg{
+        width: 75%;
+        height: 95%;
+        border: thin solid rgba(255, 255, 255, 0.250);
+        border-radius: 25px;
+    };
+}
