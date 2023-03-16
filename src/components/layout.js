@@ -36,15 +36,15 @@ const Layout = ({ children }) => {
     var tray = document.getElementById("tray");
     var elem = document.getElementById(a);
     //tray.scrollLeft = elem.offsetLeft;
-    tl.to(".component-card", {yPercent: "10%", duration:1})
+    tl.to("#content-body", {y: "10%", duration:1})
     setTimeout(() => {
         tray.scrollTo({
-            top:0,
+            body:0,
             left: elem.offsetLeft,
             behavior: 'smooth',
-            
         })
     }, 1000);
+    tl.to("#content-body", {y: "0%", duration:1, delay:1})
 }
 
     return (
@@ -70,10 +70,10 @@ const Layout = ({ children }) => {
             </svg>
             <div className="wrapper-content-layer">
                 <div className="wrapper-content">
-                    <div className="wrapper-content-top">
+                    <div className="wrapper-content-top" id="content-top">
                         <div className="location" onClick={() => {scrolldiv("hero")}}>abj</div>
                     </div>
-                    <div className="wrapper-content-body">
+                    <div className="wrapper-content-body" id="content-body">
                         <div className="light-layer">
                             <div className="ball1"></div>
                             <div className="ball2"></div>

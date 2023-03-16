@@ -43,7 +43,7 @@ body{
     width: 100%;
     height: 15%;
     //border: thin solid red;
-    border-top: thin solid rgba(255, 255, 255, 0.155);
+    border-top: thin solid rgba(185, 185, 185, 0.182);
     z-index: 2;
     margin-top: -15vh;
     background-color: #dcdccd1e;
@@ -115,7 +115,7 @@ body{
 }
 
 .component-card{
-    background-color: rgb(15, 15, 15);
+    background-color: rgb(13, 13, 13);
     @include xs{
         width: 90%;
         height: 95%;

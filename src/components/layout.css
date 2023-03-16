@@ -50,7 +50,7 @@ body {
 .wrapper-nav {
   width: 100%;
   height: 15%;
-  border-top: thin solid rgba(255, 255, 255, 0.155);
+  border-top: thin solid rgba(185, 185, 185, 0.182);
   z-index: 2;
   margin-top: -15vh;
   background-color: #dcdccd1e;
@@ -149,7 +149,7 @@ body {
 }
 
 .component-card {
-  background-color: #0f0f0f;
+  background-color: #0d0d0d;
 }
 
 @media (min-width: 0px) {
